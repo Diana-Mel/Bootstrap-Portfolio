@@ -1,0 +1,45 @@
+* {Box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar {
+    margin: 10px;
+    padding: 15px;
+}
+
+.navigation-right {
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    right: 20px;
+}
+
+.jumbotron {
+    background-image: url("/images/andrew-meehan-WvmrW1mYino-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+}
+
+.container {
+    position: relative;
+    top: 150px;
+    left: 200px;
+}
+
+.jumbotron2 {
+    margin: 80px;    
+}
+
+.jumbotron2 {
+
+}
+
+.container2 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
