@@ -1,7 +1,6 @@
 * {Box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-
 }
 
 .navbar {
@@ -45,6 +44,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 60px;
 }
 
 .container {
@@ -54,9 +54,13 @@ h1 {
 .card {
     margin: 20px; 
     display: flex !important; 
+    flex-direction: row !important;
+    justify-content: center;
     align-items: center;
-    height: 600px;
-    padding-top: 25px;
+    height: 500px;
+    padding-left: 50px;
+    min-width: 600px !important;
+    max-height: fit-content;
 }
 .card img {
     max-width: 600px !important;
@@ -64,6 +68,79 @@ h1 {
 }
 
 .card-body{
-    padding-top: 25px;
+    padding-left: 50px;
     max-width: 300px;
+    font-size: medium;
+}
+
+
+.card1 {
+    margin: 30px; 
+    display: flex !important; 
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-left: 50px;
+    min-width: 600px !important;
+    max-height: fit-content;
+}
+.card1 img {
+    max-width: 600px !important;
+    max-height: 300px!important;
+}
+
+.card-body1{
+    padding: 50px;
+    max-width:max-content;
+    font-size: medium;
+    padding: 10px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-contact-section {
+    font-size: large;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.list-group {
+    flex-direction: row !important;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+    background-color: #f8f9fa;
+}
+
+.list-group-item {
+    background-color: #f8f9fa !important;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .navigation-right {
+        display: none !important;
+    }
+    .card1 {
+        flex-direction: column !important;
+    }
+    .card-body1 {
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .card {
+        flex-direction: column !important;
+    }
 }
