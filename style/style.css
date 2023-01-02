@@ -12,6 +12,24 @@
     padding: 15px;
 }
 
+.avatar {
+    font-size: 25px;
+    color: black;
+    font-weight: 950;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: rgb(106, 90, 205, 0.5);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar::after {
+    content:attr(data-label);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
 .navigation-right {
     font-weight: bold;
     font-size: 25px;
@@ -156,6 +174,10 @@ h1 {
 }
 
 @media screen and (max-width: 900px) {
+    .navbar h1 {
+        display: none !important;
+    }
+    
     .dropdown {
         display: block !important;
     }
@@ -174,10 +196,16 @@ h1 {
         flex-direction: column !important;
     }
 
+    
+
+
 }
 
 @media screen and (max-width: 1800px) {
     .card {
         flex-direction: column !important;
+    }
+    .navbar h1 {
+        display: none !important;
     }
 }
